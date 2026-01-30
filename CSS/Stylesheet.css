@@ -43,6 +43,27 @@ a {
 	transition: var(--transitionTime);
 }
 
+code {
+	background: var(--background_C);
+	border-radius: 3px;
+	font-size: medium;
+	padding: 3px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 16px;
+	padding: 16px;
+}
+
+.grid>div {
+	background: var(--background_C);
+	padding: 16px;
+	text-align: center;
+	border-radius: 8px;
+}
+
 /**-----------------------------------------------**/
 button {
 	display: inline-block;
@@ -207,6 +228,7 @@ optgroup {
 	width: 100%;
 	height: 60px;
 	justify-content: center;
+	background: var(--background_C);
 }
 
 .vertical-line {
@@ -309,7 +331,7 @@ optgroup {
 }
 
 /**-----------------------------------------------**/
-#art-proj {
+.article {
 	width: 80%;
 }
 
@@ -330,20 +352,20 @@ optgroup {
 
 .projectTemp .proj-title {
 	display: flex;
-    flex-direction: column;
+	flex-direction: column;
 	height: 100%;
 }
 
-.projectTemp .proj-title h4,
+.projectTemp .proj-title h3,
 .projectTemp .proj-title p {
 	margin: 5px;
 }
 
 .proj-links {
 	display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-start;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: flex-start;
 	height: 100%;
 }
 

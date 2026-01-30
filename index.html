@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="darkMode">
 
 <head>
     <meta charset="UTF-8">
@@ -8,9 +8,11 @@
     <link rel="icon" href="https://github.com/stefalgo.png" type="image/png">
     <link rel="stylesheet" href="CSS/Colors.css" type="text/css">
     <link rel="stylesheet" href="CSS/Stylesheet.css" type="text/css">
+
+    <script type="module" src="js/index.js" defer></script>
 </head>
 
-<body class="darkMode">
+<body>
     <noscript>
         <div style="color: white; background-color: var(--danger); padding: 10px; border-radius: 5px;">
             ⚠️ Warning: JavaScript is disabled in your browser. Some features may not work properly.
@@ -26,27 +28,48 @@
     <div class="header">
         <h2 style="font-size: clamp(12px, 2vw, 25px)">Welcome to my personal page</h2>
         <div class="vertical-line"></div>
-        <button onclick='sharePage()'>Share Page</button>
+        <a href="https://github.com/stefalgo" target="_blank" class="githubProfile">
+            <img src="https://github.com/stefalgo.png">
+            Github Profile
+        </a>
         <button onclick="toggleColorScheme()">Color Scheme</button>
     </div>
 
-    <article id="art-proj">
+    <article id="abt-me" class="article">
+        <h2>- Me -</h2>
+        <p>
+            Hello, i am <code>Stefalgo</code> and i am a programmer creating stuff like web-pages, small games and fun
+            tools / small projects.
+            <br>
+            I joined github in <code>1/2/2025</code> to share my first main project <code>My Periodic Table</code>, that
+            it started bc i was bored.
+        </p>
+        <p>
+            anyway idk what else to say.
+        </p>
+    </article>
+
+    <article id="art-proj" class="article">
         <h2>- Projects -</h2>
         <div class="projectTemp">
             <div class="proj-title">
-                <h4>Periodic Table</h4>
+                <h3>Periodic Table</h3>
                 <p>
                     Interactive periodic table of elements
                     <br>
                     Includes tons of heatmap like visualizations and data to view and compare
+                    <br>
+                    Created this while i was bored, but i am still working on it
                 </p>
             </div>
             <div class="proj-links">
-                <a href="https://stefalgo.github.io/My-Periodic-Table/" target="_blank" class="githubProfile">
+                <a href="https://stefalgo.github.io/My-Periodic-Table/" target="_blank" class="githubProfile"
+                    title="https://stefalgo.github.io/My-Periodic-Table/">
                     <img src="https://stefalgo.github.io/My-Periodic-Table/Media/Na.png" style="background: black;">
                     Site
                 </a>
-                <a href="https://github.com/stefalgo/My-Periodic-Table" target="_blank" class="githubProfile">
+                <a href="https://github.com/stefalgo/My-Periodic-Table" target="_blank" class="githubProfile"
+                    title="https://github.com/stefalgo/My-Periodic-Table">
                     <img src="Media\GitHub_Invertocat_White.png" style="background: black;">
                     Project Page
                 </a>
