@@ -299,6 +299,7 @@ optgroup {
 	border-radius: 5px;
 	position: relative;
 	overflow: hidden;
+	background: var(--nonmetal);
 }
 
 #CloseUp output {
@@ -336,37 +337,68 @@ optgroup {
 }
 
 .projectTemp {
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 1fr 1fr auto;
+	grid-template-rows: auto 1fr auto;
+	grid-template-areas:
+		"title cont links"
+		"desc  cont links";
+	gap: 3px;
 	padding: 5px;
 	width: 100%;
 	min-height: 100px;
 	max-height: 400px;
 	background: var(--background_B);
-
 	margin: 5px;
 	margin-bottom: 10px;
 }
 
-.projectTemp .proj-title {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-}
 
-.projectTemp .proj-title h3,
-.projectTemp .proj-title p {
+.proj-title {
+	grid-area: title;
 	margin: 5px;
 }
 
 .proj-links {
+	grid-area: links;
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
 	justify-content: flex-start;
-	height: 100%;
+}
+
+.proj-cont {
+	grid-area: cont;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.proj-thumb {
+	height: 200px;
+	margin: 3px;
+	border-radius: 5px;
+}
+
+.proj-desc p {
+	margin: 0;
+}
+
+@media (max-width: 1000px) {
+	.projectTemp {
+		display: grid;
+		grid-template-columns: 1fr auto;
+		grid-template-areas:
+			"title links"
+			"desc  desc"
+			"cont  cont";
+	}
+
+	.proj-desc {
+		width: 100%;
+		min-width: 0;
+		grid-column: 1 / -1;
+	}
 }
 
 /**-----------------------------------------------**/
