@@ -25,7 +25,7 @@
         </style>
     </noscript>
 
-    <div class="header">
+    <header class="header">
         <h2 style="font-size: clamp(12px, 2vw, 25px)">Welcome to my personal page</h2>
         <div class="vertical-line"></div>
         <a href="https://github.com/stefalgo" target="_blank" class="githubProfile">
@@ -33,52 +33,55 @@
             Github Profile
         </a>
         <button onclick="toggleColorScheme()">Color Scheme</button>
-    </div>
+    </header>
+    <main>
+        <article id="abt-me" class="article">
+            <h2>- Me -</h2>
+            <p>
+                Hello, i am <code>Stefalgo</code> and i am a programmer creating stuff like web-pages, small games and
+                fun
+                tools / small projects.
+                <br>
+                I joined github in <code>1/2/2025</code> to share my first main project <code>My Periodic Table</code>,
+                that
+                it started bc i was bored.
+            </p>
+            <p>
+                anyway idk what else to say.
+            </p>
+        </article>
 
-    <article id="abt-me" class="article">
-        <h2>- Me -</h2>
-        <p>
-            Hello, i am <code>Stefalgo</code> and i am a programmer creating stuff like web-pages, small games and fun
-            tools / small projects.
-            <br>
-            I joined github in <code>1/2/2025</code> to share my first main project <code>My Periodic Table</code>, that
-            it started bc i was bored.
-        </p>
-        <p>
-            anyway idk what else to say.
-        </p>
-    </article>
-
-    <article id="art-proj" class="article">
-        <h2>- Projects -</h2>
-        <div class="projectTemp">
-            <h3 class="proj-title">Periodic Table</h3>
-            <div class="proj-desc">
-                <p>
-                    Interactive periodic table of elements
-                    <br>
-                    Includes tons of heatmap like visualizations and data to view and compare
-                    <br>
-                    Created this while i was bored, but i am still working on it
-                </p>
+        <article id="art-proj" class="article">
+            <h2>- Projects -</h2>
+            <div class="projectTemp">
+                <h3 class="proj-title">Periodic Table</h3>
+                <div class="proj-desc">
+                    <p>
+                        Interactive periodic table of elements
+                        <br>
+                        Includes tons of heatmap like visualizations and data to view and compare
+                        <br>
+                        Created this while i was bored, but i am still working on it
+                    </p>
+                </div>
+                <div class="proj-cont">
+                    <img class="proj-thumb" src="Media/PeriodicTable.png">
+                </div>
+                <nav class="proj-links">
+                    <a href="https://stefalgo.github.io/My-Periodic-Table/" target="_blank" class="githubProfile"
+                        title="https://stefalgo.github.io/My-Periodic-Table/">
+                        <img src="https://stefalgo.github.io/My-Periodic-Table/Media/Na.png" style="background: black;">
+                        Site
+                    </a>
+                    <a href="https://github.com/stefalgo/My-Periodic-Table" target="_blank" class="githubProfile"
+                        title="https://github.com/stefalgo/My-Periodic-Table">
+                        <img src="Media\GitHub_Invertocat_White.png" style="background: black;">
+                        Project Page
+                    </a>
+                </nav>
             </div>
-            <div class="proj-cont">
-                <img class="proj-thumb" src="Media/PeriodicTable.png">
-            </div>
-            <nav class="proj-links">
-                <a href="https://stefalgo.github.io/My-Periodic-Table/" target="_blank" class="githubProfile"
-                    title="https://stefalgo.github.io/My-Periodic-Table/">
-                    <img src="https://stefalgo.github.io/My-Periodic-Table/Media/Na.png" style="background: black;">
-                    Site
-                </a>
-                <a href="https://github.com/stefalgo/My-Periodic-Table" target="_blank" class="githubProfile"
-                    title="https://github.com/stefalgo/My-Periodic-Table">
-                    <img src="Media\GitHub_Invertocat_White.png" style="background: black;">
-                    Project Page
-                </a>
-            </nav>
-        </div>
-    </article>
+        </article>
+    </main>
 </body>
 
 </html>
