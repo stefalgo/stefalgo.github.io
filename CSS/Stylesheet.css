@@ -6,7 +6,7 @@
 	--hoverShadow: 0 0 10px var(--hoverColor);
 
 	--borderShadowColorEffectHover: inset 0 0 0 2px #0099ff;
-	;
+
 	--borderShadowColorEffectClick: inset 0 0 0 2px #ff4a4a;
 
 	--transitionTime: 0.3s;
