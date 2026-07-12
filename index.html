@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="CSS/Colors.css" type="text/css">
     <link rel="stylesheet" href="CSS/Stylesheet.css" type="text/css">
 
-    <script type="module" src="js/index.js" defer></script>
+    <script src="js/index.js" defer></script>
 </head>
 
 <body>
@@ -32,7 +32,6 @@
             <img src="https://github.com/stefalgo.png">
             Github Profile
         </a>
-        <button onclick="toggleColorScheme()">Color Scheme</button>
     </header>
     <main>
         <article id="abt-me" class="article">
@@ -42,7 +41,7 @@
                 fun
                 tools / small projects.
                 <br>
-                I joined github in <code>1/2/2025</code> to share my first main project <code>My Periodic Table</code>,
+                I joined github in <code>1/2/2025</code> to share my first main project <code><a href="#project_1">My Periodic Table</a></code>,
                 that
                 it started bc i was bored.
             </p>
@@ -53,7 +52,7 @@
 
         <article id="art-proj" class="article">
             <h2>- Projects -</h2>
-            <div class="projectTemp">
+            <div class="projectTemp" id="project_1">
                 <h3 class="proj-title">Periodic Table</h3>
                 <div class="proj-desc">
                     <p>
@@ -79,7 +78,7 @@
                 </nav>
             </div>
 
-            <div class="projectTemp">
+            <div class="projectTemp" id="project_2">
                 <h3 class="proj-title">Audio player and visualizer</h3>
                 <div class="proj-desc">
                     <p>
